@@ -67,6 +67,7 @@ public class App extends Application {
 	
 	public void createAlertError(String title, String header,String message) {
 		Alert alert = new Alert(AlertType.ERROR);
+		alert.setResizable(true);
     	alert.setTitle(title);
     	alert.setHeaderText(header);
     	alert.setContentText(message);
@@ -75,6 +76,7 @@ public class App extends Application {
 	
 	public void createAlertSuccess(String title, String header,String message) {
 		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setResizable(true);
     	alert.setTitle(title);
     	alert.setHeaderText(header);
     	alert.setContentText(message);
